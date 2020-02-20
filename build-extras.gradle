@@ -1,7 +1,7 @@
 ext {
     // To make minimum SDK as 21
     // cdvMinSdkVersion = null
-    cdvVersionCode=Integer.parseInt('' + "1")
+    cdvVersionCode=Integer.parseInt('' + "2")
 }
 android {
     defaultConfig {

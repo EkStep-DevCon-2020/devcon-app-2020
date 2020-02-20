@@ -211,15 +211,15 @@ export class NotificationService {
                 const now = new Date();
                 if (now.getTime() > startTime.getTime() && now.getTime() < endTime.getTime()) {
                     console.log('handleNotification');
-                    this.playContent(configData.data.identifier);
+                    this.playContent(configData);
                 }
             }
         }
     }
 
-    playContent(identifier: string) {
+    playContent(configData: any) {
         const req: ContentDetailRequest = {
-            contentId: identifier,
+            contentId: configData.data.identifier,
             attachFeedback: true,
             attachContentAccess: true,
             emitUpdateIfAny: false
@@ -229,7 +229,7 @@ export class NotificationService {
                 if (data) {
                     const cdata: CorrelationData[] = [
                         { type: 'Visitor', id: localStorage.getItem('CODE_ATTRIBUTE')!.toString() },
-                        { type: 'Time', id: '' + Date.now() },
+                        { type: 'Time', id: '' + configData.data.start },
                     ];
                     const contentInfo: ContentInfo = {
                         telemetryObject: new TelemetryObject('', '', ''),
