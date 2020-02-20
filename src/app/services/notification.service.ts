@@ -28,7 +28,7 @@ export class NotificationService {
             'data': {
                 'start': '4 14:00',
                 'title': 'Devcon 2020',
-                'startTime': '2020-02-20T13:55:00',
+                'startTime': '2020-02-20T13:59:00',
                 'endTime': '2020-02-20T14:10:00',
                 'msg': 'Lets see if you have all the answers!',
                 'identifier': 'do_2129599201136558081111'
@@ -40,8 +40,8 @@ export class NotificationService {
             'data': {
                 'start': '4 14:30',
                 'title': 'Devcon 2020',
-                'startTime': '2020-02-20T14:25:00',
-                'endTime': '2020-02-20T14:40:00',
+                'startTime': '2020-02-20T14:29:00',
+                'endTime': '2020-02-20T14:35:00',
                 'msg': 'Do you know the answers?',
                 'identifier': 'do_2129599450151239681116'
             }
@@ -52,8 +52,8 @@ export class NotificationService {
             'data': {
                 'start': '4 15:00',
                 'title': 'Devcon 2020',
-                'startTime': '2020-02-20T14:55:00',
-                'endTime': '2020-02-20T15:10:00',
+                'startTime': '2020-02-20T14:59:00',
+                'endTime': '2020-02-20T15:05:00',
                 'msg': 'Time for another quiz!',
                 'identifier': 'do_2129599565959249921120'
             }
@@ -64,8 +64,8 @@ export class NotificationService {
             'data': {
                 'start': '4 15:30',
                 'title': 'Devcon 2020',
-                'startTime': '2020-02-20T15:25:00',
-                'endTime': '2020-02-20T15:40:00',
+                'startTime': '2020-02-20T15:29:00',
+                'endTime': '2020-02-20T15:35:00',
                 'msg': 'Lets get those braincells moving!',
                 'identifier': 'do_2129604318973870081128'
             }
@@ -76,8 +76,8 @@ export class NotificationService {
             'data': {
                 'start': '4 16:00',
                 'title': 'Devcon 2020',
-                'startTime': '2020-02-20T15:55:00',
-                'endTime': '2020-02-20T16:10:00',
+                'startTime': '2020-02-20T15:59:00',
+                'endTime': '2020-02-20T16:05:00',
                 'msg': 'Take a Quiz break...',
                 'identifier': 'do_2129604418711306241129'
             }
@@ -88,8 +88,8 @@ export class NotificationService {
             'data': {
                 'start': '4 16:30',
                 'title': 'Devcon 2020',
-                'startTime': '2020-02-20T16:25:00',
-                'endTime': '2020-02-20T16:40:00',
+                'startTime': '2020-02-20T16:29:00',
+                'endTime': '2020-02-20T16:35:00',
                 'msg': 'Quiz time! 10 min starts now...',
                 'identifier': 'do_2129604657296261121132'
             }
@@ -100,8 +100,8 @@ export class NotificationService {
             'data': {
                 'start': '4 17:00',
                 'title': 'Devcon 2020',
-                'startTime': '2020-02-20T18:55:00',
-                'endTime': '2020-02-20T17:10:00',
+                'startTime': '2020-02-20T18:59:00',
+                'endTime': '2020-02-20T17:05:00',
                 'msg': 'Do you remember what you learnt at school?',
                 'identifier': 'do_2129604740764958721133'
             }
@@ -112,8 +112,8 @@ export class NotificationService {
             'data': {
                 'start': '4 17:30',
                 'title': 'Devcon 2020',
-                'startTime': '2020-02-20T17:25:00',
-                'endTime': '2020-02-20T17:40:00',
+                'startTime': '2020-02-20T17:29:00',
+                'endTime': '2020-02-20T17:35:00',
                 'msg': 'Test your knowledge!',
                 'identifier': 'do_2129604818587484161136'
             }
@@ -124,8 +124,8 @@ export class NotificationService {
             'data': {
                 'start': '4 18:00',
                 'title': 'Devcon 2020',
-                'startTime': '2020-02-20T17:55:00',
-                'endTime': '2020-02-20T18:10:00',
+                'startTime': '2020-02-20T17:59:00',
+                'endTime': '2020-02-20T18:05:00',
                 'msg': 'Lets get those braincells moving!',
                 'identifier': 'do_2129604931508060161137'
             }

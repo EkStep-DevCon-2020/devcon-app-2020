@@ -1,16 +1,16 @@
-import {AfterViewInit, Component, Inject, OnInit} from '@angular/core';
-import {Platform} from '@ionic/angular';
-import {SplashScreen} from '@ionic-native/splash-screen/ngx';
-import {StatusBar} from '@ionic-native/status-bar/ngx';
-import {NotificationService as LocalNotification} from './services/notification.service';
-import {PushNotificationService} from './services/push-notification';
-import {NavigationEnd, Router} from '@angular/router';
-import {filter, mergeMap, take, tap} from 'rxjs/operators';
-import {combineLatest} from 'rxjs';
-import {ContentUtil} from './services/content.service';
-import {TelemetryAutoSyncService, TelemetryService} from '@project-sunbird/sunbird-sdk';
-import {StallServiceImpl} from './services/stall/stall-service-impl';
-import {PreferenceKeys} from '../config/preference-keys';
+import { AfterViewInit, Component, Inject, OnInit } from '@angular/core';
+import { Platform } from '@ionic/angular';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { NotificationService as LocalNotification } from './services/notification.service';
+import { PushNotificationService } from './services/push-notification';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter, mergeMap, take, tap } from 'rxjs/operators';
+import { combineLatest } from 'rxjs';
+import { ContentUtil } from './services/content.service';
+import { TelemetryAutoSyncService, TelemetryService } from '@project-sunbird/sunbird-sdk';
+import { StallServiceImpl } from './services/stall/stall-service-impl';
+import { PreferenceKeys } from '../config/preference-keys';
 
 @Component({
   selector: 'app-root',
@@ -71,7 +71,9 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     this.platform.resume.subscribe(() => {
-      this.notificationSrc.handleNotification();
+      if (localStorage.getItem(PreferenceKeys.Walkthrough.WALKTHROUGH_COMPLETE)) {
+        this.notificationSrc.handleNotification();
+      }
     });
 
     // this.platform.pause.subscribe(() => {
@@ -92,8 +94,6 @@ export class AppComponent implements OnInit, AfterViewInit {
       this.conettnUtil.importContent();
       this.autoSyncTelemetry();
     });
-
-    this.notificationSrc.setupLocalNotification();
 
     if (this.platform.is('cordova')) {
       this.pushNotificationService.setupPush();
